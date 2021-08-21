@@ -1,0 +1,7 @@
+<h2 class="form-field__label">{{ label }}</h2>
+<div class="form-field__control">
+  <ng-content select="input, textarea, app-drop-down-input"></ng-content>
+  <div class="form-field__error-container">
+    <ng-content select="app-demo-form-error"></ng-content>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+.form-field {
+  .form-input,
+  .form-textarea {
+    color: $font-color;
+    border: 2px solid map-get($def-gray, 3);
+    outline: none;
+    box-sizing: border-box;
+    padding: 5px;
+
+    &:focus,
+    &:focus-visible {
+      border: 2px solid map-get($def-gray, 4);
+    }
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .form-textarea {
+    resize: none;
+  }
+
+  &--invalid {
+    .form-input,
+    .form-textarea {
+      border: 2px solid map-get($def-red, 1);
+    }
+  }
+
+  &--focused {
+    .form-input,
+    .form-textarea {
+      border: 2px solid map-get($def-gray, 4);
+    }
+  }
+}
+
+.form-button {
+  color: $font-color;
+  padding: 7px;
+  width: 100%;
+  border: 1px solid map-get($def-yellow, 2);
+  background-color: map-get($def-yellow, 2);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 15px 0;
+
+  &:hover {
+    border: 1px solid map-get($def-yellow, 1);
+    background-color: map-get($def-yellow, 1);
+  }
+}

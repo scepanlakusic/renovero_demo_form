@@ -1,0 +1,17 @@
+@import "../../../assets/styles/variables";
+
+:host {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &.message-success {
+    background-color: map-get($def-green, 1);
+    color: $def-white;
+  }
+  &.message-error {
+    background-color: map-get($def-red, 2);
+    color: $def-white;
+  }
+}

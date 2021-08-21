@@ -1,0 +1,23 @@
+<div class="dropdown-input">
+  <input
+    class="form-input dropdown-input__input"
+    type="text"
+    #inputEl
+    [(ngModel)]="controlValue"
+  />
+  <button type="button" (click)="toogleOptions()" class="dropdown-input__icon">
+    <i
+      class="dropdown-input__icon__arrow"
+      [ngClass]="{ 'dropdown-input__icon__arrow--up': showOptions }"
+    ></i>
+  </button>
+</div>
+<ul class="dropdown-input__options" *ngIf="showOptions && options?.length">
+  <li
+    class="dropdown-input__option"
+    *ngFor="let option of options"
+    (click)="selectOption(option)"
+  >
+    {{ option }}
+  </li>
+</ul>

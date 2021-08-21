@@ -1,0 +1,16 @@
+@import "../../../assets/styles/variables";
+
+.form-container {
+  width: 449px;
+  margin: 50px auto;
+  box-shadow: 1px 1px 10px 1px #888888;
+
+  &__header {
+    height: 10px;
+    background-color: map-get($def-yellow, 2);
+  }
+
+  &__content {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../../assets/styles/variables";
+
+:host {
+  display: none;
+  font-size: 14px;
+  color: map-get($def-red, 1);
+
+  &.form-field__error--show {
+    display: block;
+  }
+}

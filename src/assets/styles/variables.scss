@@ -1,0 +1,38 @@
+$def-white: #ffffff;
+
+$def-gray: (
+  1: #f7f8f8,
+  2: #e9eaea,
+  3: #dfdfdf,
+  4: #bbbbbb,
+);
+
+$def-blue: (
+  1: #eff5fc,
+  2: #dbe9f9,
+  3: #2874a6,
+  4: #154360,
+);
+
+$def-yellow: (
+  1: #f5ce94,
+  2: #f7c876,
+);
+
+$def-red: (
+  1: #f19ea0,
+  2: #c71c22,
+);
+
+$def-green: (
+  1: #17a488,
+);
+
+$font-family: Tahoma, Geneva, sans-serif;
+$font-color: map-get($def-blue, 3);
+$font-sizes: (
+  "base": 15px,
+  "label-xs": 13px,
+  "title": 18px,
+  "subtitle": 16px,
+);

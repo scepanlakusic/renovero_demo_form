@@ -1,0 +1,45 @@
+<h1>Gute Handwerker zu guten Preisen</h1>
+<p>
+  Mit <b>10 Jahren Erfahrug</b> hilft lhnen renovero unkompliziert lhren
+  <b>Fachmann</b> zu finden.
+</p>
+<form [formGroup]="demoForm" (ngSubmit)="onFormSubmit()">
+  <app-demo-form-field full-width label="Sanitär in Region Zürich finden für">
+    <app-drop-down-input
+      [options]="jobOptions"
+      formControlName="title"
+      appCustomControl
+    ></app-drop-down-input>
+    <app-demo-form-error errorKey="required">
+      This field is required
+    </app-demo-form-error>
+  </app-demo-form-field>
+  <app-demo-form-field full-width label="Was soll genau gemacht werden?">
+    <textarea
+      placeholder="Ich würde gerne meine Wand streichen lassen. Die Wand erstreckt sich über 2 Stockwerke."
+      class="form-textarea"
+      formControlName="description"
+      cols="50"
+      rows="10"
+      appDemoFormControl
+    ></textarea>
+    <app-demo-form-error errorKey="required">
+      This field is required
+    </app-demo-form-error>
+  </app-demo-form-field>
+  <app-demo-form-field full-width label="Email">
+    <input
+      class="form-input"
+      type="text"
+      formControlName="email"
+      appDemoFormControl
+    />
+    <app-demo-form-error errorKey="required">
+      This field is required
+    </app-demo-form-error>
+    <app-demo-form-error errorKey="email">
+      This field must be email
+    </app-demo-form-error>
+  </app-demo-form-field>
+  <button class="form-button" type="submit">Kontaktdaten angeben</button>
+</form>

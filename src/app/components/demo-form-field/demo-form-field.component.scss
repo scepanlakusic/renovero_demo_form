@@ -1,0 +1,32 @@
+:host {
+  &.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &[full-width] {
+      align-items: stretch;
+
+      .form-field__control {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.form-field {
+  &__label {
+    margin-bottom: 10px;
+  }
+
+  &__control {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  &__error-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
